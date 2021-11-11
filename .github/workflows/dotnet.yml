@@ -23,4 +23,6 @@ jobs:
       run: dotnet build HorseRacingBackend/HorseRacingBackend/HorseRacingBackend.csproj --no-restore
     - name: Unit Tests
       run: dotnet test HorseRacingBackend/UnitTests/UnitTests.csproj --no-build --verbosity normal
+    - name: Integration Tests
+      run: dotnet test HorseRacingBackend/IntegrationTests/IntegrationTests.csproj --no-build --verbosity normal
       

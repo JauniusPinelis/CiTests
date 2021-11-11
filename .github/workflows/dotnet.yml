@@ -23,6 +23,4 @@ jobs:
       run: dotnet build HorseRacingBackend/HorseRacingBackend/HorseRacingBackend.csproj
     - name: Unit Tests
       run: dotnet test HorseRacingBackend/UnitTests/UnitTests.csproj --verbosity normal
-    - name: Integration Tests
-      run: dotnet test HorseRacingBackend/IntegrationTests/IntegrationTests.csproj --verbosity normal
       

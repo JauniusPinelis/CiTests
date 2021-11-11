@@ -37,7 +37,7 @@ namespace UnitTests
         {
             var result = GetTip(10, 0.2M);
 
-            Assert.AreEqual(12, result);
+            Assert.AreEqual(12, 0);
         }
 
         [Test]

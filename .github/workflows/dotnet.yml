@@ -20,9 +20,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore HorseRacingBackend/HorseRacingBackend/HorseRacingBackend.csproj
     - name: Build
-      run: dotnet build HorseRacingBackend/HorseRacingBackend/HorseRacingBackend.csproj --no-restore
+      run: dotnet build HorseRacingBackend/HorseRacingBackend/HorseRacingBackend.csproj
     - name: Unit Tests
-      run: dotnet test HorseRacingBackend/UnitTests/UnitTests.csproj --no-build --verbosity normal
+      run: dotnet test HorseRacingBackend/UnitTests/UnitTests.csproj --verbosity normal
     - name: Integration Tests
-      run: dotnet test HorseRacingBackend/IntegrationTests/IntegrationTests.csproj --no-build --verbosity normal
+      run: dotnet test HorseRacingBackend/IntegrationTests/IntegrationTests.csproj --verbosity normal
       

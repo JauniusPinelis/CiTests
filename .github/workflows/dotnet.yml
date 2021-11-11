@@ -18,9 +18,9 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore HorseRacingBackend\HorseRacingBackend\HorseRacingBackend.csproj
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build HorseRacingBackend\HorseRacingBackend\HorseRacingBackend.csproj --no-restore
+    - name: Unit Tests
+      run: dotnet test HorseRacingBackend\UnitTests\UnitTests.csproj --no-build --verbosity normal
       
